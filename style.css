@@ -5,7 +5,7 @@ body {
    background-repeat:no-repeat;
    background-size: cover;
    display: grid;
-   place-items: center center;
+   place-items: center center ;
    font-family:Verdana, Geneva, Tahoma, sans-serif;
    z-index: -100;
    
@@ -25,6 +25,7 @@ body::before{
 }
 
 .grid {
+    margin-left: -660px;
     margin-top: 50px;
     margin-bottom: 50px;
     display: grid; 
@@ -42,7 +43,24 @@ body::before{
       clip-path:polygon(0 0,100% 0, 100% 85%, 0 100%);
   }
 
-  img {
+.main { 
+    display: flex;
+    padding-right: 200px;
+  
+}
+
+ .becode {
+   
+   width: 20%;
+   height: 20%;
+
+   margin-top: 300px;
+   border-radius: 20px 20px 20px 20px;
+   
+}
+
+
+  img.tibedo {
       width: 100%;
       display: block;
       border-radius: 20px 20px 0 0;
