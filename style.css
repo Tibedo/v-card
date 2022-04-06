@@ -1,5 +1,36 @@
 
 
+.menunav {
+    position:fixed;
+    list-style: none;
+    display: flex;
+    justify-content:space-around;
+    align-items:center;  
+    
+}
+
+.resume, .from, .futur {
+    margin-left: 350px;
+    margin-right: auto;
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: rgb(0, 0, 0);
+    border: 10px solid black;
+    border-radius: 5px;
+    
+}
+
+.resume {
+    margin-left: -500px;
+}
+
+.from {
+    
+}
+.future {
+    
+}
+
 body {
    background-image: url(https://th.bing.com/th/id/R.8ed61475b525a45b16e42f635270722e?rik=BxJ4jmuV%2bmP4nw&riu=http%3a%2f%2fimage.noelshack.com%2ffichiers%2f2014%2f28%2f1404945291-atomium-blues.jpg&ehk=YQaRXhl3mVvAMrraa1I0RWa733MxIh%2fhHzxdxYnewaY%3d&risl=&pid=ImgRaw&r=0);
    background-repeat:no-repeat;
@@ -24,38 +55,34 @@ body::before{
    
 }
 
-.grid {
-    margin-left: -660px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    display: grid; 
-    grid-template-columns: repeat(auto-fit, minmax(400px,300px));
-    gap: 40px;
+.flex {
+  
+    display:flex;
+    margin: auto;
+    width: 75%;
     background-color: rgb(54, 0, 85);
     border-radius: 20px;
     box-shadow: 0 5px 25px black;
     opacity: 1;
+    margin-top: 100px;
     
   }
 
   .picture {
       position: relative;
-      clip-path:polygon(0 0,100% 0, 100% 85%, 0 100%);
+      padding:20px;
   }
 
-.main { 
-    display: flex;
-    padding-right: 200px;
-  
-}
+
 
  .becode {
    
-   width: 20%;
-   height: 20%;
+   width: 15%;
+   height: 15%;
 
-   margin-top: 300px;
-   border-radius: 20px 20px 20px 20px;
+   margin-top: 80px;
+   margin-left: 610px;
+   border-radius: 150px 150px 150px 150px;
    
 }
 
@@ -76,55 +103,70 @@ body::before{
       top: 0;
       left: 0;
       border-radius: 20px 20px 0 0;
-      opacity: 0.3;
+      opacity: 0.2;
   }
 
-  .grid>.picture:after {
+  .flex>.picture:after {
       background-image: linear-gradient(150deg, rgb(219, 0, 55), rgb(77, 0, 110));
   }
 
   .content {
       padding: 10px 20px;
+      margin-top: 100px;
+      
 
   }
 
   .content>h1 {
       color: rgb(255, 255, 255);
-      font-weight: 600;
+      font-weight: 700;
       font-size: 20px;
-      margin: -10px 0 15px 0;
+      margin-top: -100px;
       
   }
 
   .content>h3 {
     color: rgb(255, 255, 255);
-    font-weight: 500;
+    font-weight: 700;
     font-size: 18px;
-    margin: 0px 0 15px 0;
+    margin-bottom: 50px;
 }
 
 .content>p {
     font-family:fantasy;
     color: rgb(255, 255, 255);
-    font-size: 15px;
+    font-size: 20px;
     margin: 0px 0 15px 0;
+}
+
+.content {
+    display: flex;
+    flex-flow: column;
+    justify-content:center;
+    
+    
 }
 
 .buttons {
     display: flex;
-    justify-content:space-around;
-    align-items:center;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: flex-start;
     padding-bottom: 20px;
-    margin-top: -30px;
+    
 }
 
 button {
+    display: flex;
+    justify-content: center;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     background-color: purple;
     color: rgb(255, 255, 255);
-    padding: 10px;
-    width: 50%;
-    margin: 0 15px;
+    padding: 10px 30px;
+    width: 70%;
+    margin: 0 20px;
+    border-radius: 20px 100px 100px 100px;
+    
 }
 
 a {
