@@ -1,32 +1,32 @@
 
 
 body {
-   
+   background-image: url(https://th.bing.com/th/id/R.8ed61475b525a45b16e42f635270722e?rik=BxJ4jmuV%2bmP4nw&riu=http%3a%2f%2fimage.noelshack.com%2ffichiers%2f2014%2f28%2f1404945291-atomium-blues.jpg&ehk=YQaRXhl3mVvAMrraa1I0RWa733MxIh%2fhHzxdxYnewaY%3d&risl=&pid=ImgRaw&r=0);
    background-repeat:no-repeat;
    background-size: cover;
    display: grid;
    place-items: center center;
    font-family:Verdana, Geneva, Tahoma, sans-serif;
-
+   z-index: -100;
+   
 }
 body::before{
     background: linear-gradient(150deg, rgb(80, 1, 80, 0.7) , rgb(174, 0, 32, 0.7) ) ;
     content: "";
-    height: 100%;
+    height:110%;
     width: 100%;
-    position: absolute;
+    position:absolute;
     top: 0;
     left: 0;
     border-radius: 20px 20px 0 0;
-    opacity: 0.4;
+    opacity: 95%;  
+    z-index: -99;
    
 }
 
-
-
-
 .grid {
-    
+    margin-top: 50px;
+    margin-bottom: 50px;
     display: grid; 
     grid-template-columns: repeat(auto-fit, minmax(400px,300px));
     gap: 40px;
@@ -34,7 +34,7 @@ body::before{
     border-radius: 20px;
     box-shadow: 0 5px 25px black;
     opacity: 1;
-    !important
+    
   }
 
   .picture {
@@ -46,6 +46,8 @@ body::before{
       width: 100%;
       display: block;
       border-radius: 20px 20px 0 0;
+      
+    
   }
 
   .picture:after {
@@ -56,7 +58,7 @@ body::before{
       top: 0;
       left: 0;
       border-radius: 20px 20px 0 0;
-      opacity: 0.7;
+      opacity: 0.3;
   }
 
   .grid>.picture:after {
@@ -88,4 +90,26 @@ body::before{
     color: rgb(255, 255, 255);
     font-size: 15px;
     margin: 0px 0 15px 0;
+}
+
+.buttons {
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+    padding-bottom: 20px;
+    margin-top: -30px;
+}
+
+button {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: purple;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    width: 50%;
+    margin: 0 15px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
 }
